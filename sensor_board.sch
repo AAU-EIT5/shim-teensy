@@ -1,0 +1,251 @@
+EESchema Schematic File Version 4
+LIBS:sensor_board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R3 A1
+U 1 1 5BE04630
+P 5525 3400
+F 0 "A1" H 5525 4578 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 5025 4375 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 5675 2350 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 5325 4450 50  0001 C CNN
+	1    5525 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5BE0474F
+P 3300 3050
+F 0 "J1" H 3220 2525 50  0000 C CNN
+F 1 "Sensor0" H 3220 2616 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 3300 3050 50  0001 C CNN
+F 3 "~" H 3300 3050 50  0001 C CNN
+	1    3300 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 2750 3925 2750
+Wire Wire Line
+	3925 2750 3925 2675
+Wire Wire Line
+	3500 3250 3800 3250
+Wire Wire Line
+	3500 3150 3800 3150
+Wire Wire Line
+	3500 3050 3800 3050
+Wire Wire Line
+	3500 2950 3800 2950
+Wire Wire Line
+	3500 2850 3925 2850
+Wire Wire Line
+	3925 2850 3925 2925
+$Comp
+L power:GND #PWR0101
+U 1 1 5BE049C8
+P 3975 2950
+F 0 "#PWR0101" H 3975 2700 50  0001 C CNN
+F 1 "GND" H 3980 2777 50  0000 C CNN
+F 2 "" H 3975 2950 50  0001 C CNN
+F 3 "" H 3975 2950 50  0001 C CNN
+	1    3975 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5BE04A1A
+P 3975 2650
+F 0 "#PWR0102" H 3975 2500 50  0001 C CNN
+F 1 "+5V" H 3990 2823 50  0000 C CNN
+F 2 "" H 3975 2650 50  0001 C CNN
+F 3 "" H 3975 2650 50  0001 C CNN
+	1    3975 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5BE04B26
+P 3975 2800
+F 0 "C1" H 4067 2846 50  0000 L CNN
+F 1 "C_Small" H 4067 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3975 2800 50  0001 C CNN
+F 3 "~" H 3975 2800 50  0001 C CNN
+	1    3975 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 2675 3925 2675
+Wire Wire Line
+	3975 2650 3975 2675
+Wire Wire Line
+	3975 2675 3975 2700
+Connection ~ 3975 2675
+Wire Wire Line
+	3925 2925 3975 2925
+Wire Wire Line
+	3975 2925 3975 2900
+Wire Wire Line
+	3975 2925 3975 2950
+Connection ~ 3975 2925
+Text Label 3800 2950 2    50   ~ 0
+SCL
+Text Label 3800 3050 2    50   ~ 0
+SDA
+Text Label 3800 3150 2    50   ~ 0
+GPIO_0
+Text Label 3800 3250 2    50   ~ 0
+~XSHUT_0
+$Comp
+L Connector_Generic:Conn_01x06 J2
+U 1 1 5BE02A55
+P 3300 4150
+F 0 "J2" H 3220 3625 50  0000 C CNN
+F 1 "Sensor1" H 3220 3716 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 3300 4150 50  0001 C CNN
+F 3 "~" H 3300 4150 50  0001 C CNN
+	1    3300 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 3850 3925 3850
+Wire Wire Line
+	3925 3850 3925 3775
+Wire Wire Line
+	3500 4350 3800 4350
+Wire Wire Line
+	3500 4250 3800 4250
+Wire Wire Line
+	3500 4150 3800 4150
+Wire Wire Line
+	3500 4050 3800 4050
+Wire Wire Line
+	3500 3950 3925 3950
+Wire Wire Line
+	3925 3950 3925 4025
+$Comp
+L power:GND #PWR0103
+U 1 1 5BE02A63
+P 3975 4050
+F 0 "#PWR0103" H 3975 3800 50  0001 C CNN
+F 1 "GND" H 3980 3877 50  0000 C CNN
+F 2 "" H 3975 4050 50  0001 C CNN
+F 3 "" H 3975 4050 50  0001 C CNN
+	1    3975 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5BE02A69
+P 3975 3750
+F 0 "#PWR0104" H 3975 3600 50  0001 C CNN
+F 1 "+5V" H 3990 3923 50  0000 C CNN
+F 2 "" H 3975 3750 50  0001 C CNN
+F 3 "" H 3975 3750 50  0001 C CNN
+	1    3975 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5BE02A6F
+P 3975 3900
+F 0 "C2" H 4067 3946 50  0000 L CNN
+F 1 "C_Small" H 4067 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3975 3900 50  0001 C CNN
+F 3 "~" H 3975 3900 50  0001 C CNN
+	1    3975 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 3775 3925 3775
+Wire Wire Line
+	3975 3750 3975 3775
+Wire Wire Line
+	3975 3775 3975 3800
+Connection ~ 3975 3775
+Wire Wire Line
+	3925 4025 3975 4025
+Wire Wire Line
+	3975 4025 3975 4000
+Wire Wire Line
+	3975 4025 3975 4050
+Connection ~ 3975 4025
+Text Label 3800 4050 2    50   ~ 0
+SCL
+Text Label 3800 4150 2    50   ~ 0
+SDA
+Text Label 3800 4250 2    50   ~ 0
+GPIO_1
+Text Label 3800 4350 2    50   ~ 0
+~XSHUT_1
+Text Label 6200 3900 2    50   ~ 0
+SCL
+Text Label 6200 3800 2    50   ~ 0
+SDA
+Wire Wire Line
+	6025 3800 6200 3800
+Wire Wire Line
+	6025 3900 6200 3900
+Text Label 4675 3500 0    50   ~ 0
+~XSHUT_0
+Text Label 4675 3600 0    50   ~ 0
+~XSHUT_1
+Wire Wire Line
+	4675 3600 5025 3600
+Wire Wire Line
+	4675 3500 5025 3500
+Text Label 4675 3000 0    50   ~ 0
+GPIO_0
+Text Label 4675 3100 0    50   ~ 0
+GPIO_1
+Wire Wire Line
+	4675 3100 5025 3100
+Wire Wire Line
+	4675 3000 5025 3000
+$Comp
+L power:+5V #PWR0105
+U 1 1 5BE04941
+P 5725 2400
+F 0 "#PWR0105" H 5725 2250 50  0001 C CNN
+F 1 "+5V" H 5740 2573 50  0000 C CNN
+F 2 "" H 5725 2400 50  0001 C CNN
+F 3 "" H 5725 2400 50  0001 C CNN
+	1    5725 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5BE0496F
+P 5525 4600
+F 0 "#PWR0106" H 5525 4350 50  0001 C CNN
+F 1 "GND" H 5530 4427 50  0000 C CNN
+F 2 "" H 5525 4600 50  0001 C CNN
+F 3 "" H 5525 4600 50  0001 C CNN
+	1    5525 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 4500 5425 4550
+Wire Wire Line
+	5425 4550 5525 4550
+Wire Wire Line
+	5625 4550 5625 4500
+Wire Wire Line
+	5525 4500 5525 4550
+Connection ~ 5525 4550
+Wire Wire Line
+	5525 4550 5625 4550
+Wire Wire Line
+	5525 4550 5525 4600
+$EndSCHEMATC
